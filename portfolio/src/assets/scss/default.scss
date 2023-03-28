@@ -1,3 +1,143 @@
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;
-  text-align: center;color: #2c3e50;margin-top: 60px;}
+$primary-color: #ffffff;
+
+body {
+  background-color: #000000;
+  color: $primary-color;
+}
+
+.intro-page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.intro-text {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.intro-text h1 {
+  font-size: 5rem;
+}
+
+.intro-text p {
+  font-size: 2rem;
+}
+
+.intro-star {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: url('../images/star.webp') repeat;
+  z-index: 0;
+  animation: star 60s linear infinite;
+}
+
+@keyframes star {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-2000px);
+  }
+}
+
+// Variables
+$primary-color: #ffffff;
+
+// Base Styles
+body {
+  background-color: #000000;
+  color: $primary-color;
+}
+
+.intro-page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+
+  // Star background
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: url('../images/star.webp') repeat;
+    z-index: -1;
+    animation: star 60s linear infinite;
+  }
+}
+
+.intro-text {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.intro-text h1 {
+  font-size: 5rem;
+}
+
+.intro-text p {
+  font-size: 2rem;
+}
+
+// Keyframes
+@keyframes star {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-2000px);
+  }
+}
+
+.intro-text h1,
+.intro-text p {
+  display: inline-block;
+}
+
+.intro-text .char {
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+  animation-delay: calc(var(--i) * 0.1s);
+}
+
+.intro-text .cursor {
+  display: inline-block;
+  margin-left: 5px;
+  width: 6px;
+  height: 1.1em;
+  background-color: black;
+  animation: blinkCursor 0.5s step-end infinite;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes blinkCursor {
+  from,
+  to {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
