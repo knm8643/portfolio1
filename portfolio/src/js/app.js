@@ -3,35 +3,22 @@ export default {
     name: 'App',
     data() {
         return {
-            title: "Hello, World!",
-            subtitle: "Welcome to my website",
-            delay: 100,
-            cursorVisible: true
+            title: "Hello World!",
+            subtitle: "Welcome to My Website!",
+            cursorVisible: true,
         };
     },
     mounted() {
-        this.showText();
-        setInterval(() => {
-            const star = document.querySelector('.intro-star')
-            star.style.animation = 'none'
-            setTimeout(() => {
-                star.style.animation = 'star 60s linear infinite'
-            }, 1000)
-        }, 30000)
+        this.$nextTick(() => {
+            const star = document.querySelector('.intro-star');
+            star.addEventListener('load', () => {
+                star.style.animation = 'star 20s ease-in-out infinite';
+                star.style.animation.direction = 'alternate';
+                star.style.animation.delay = '1.5';
+                star.style.animation.fill.mode = 'forwards';
+            });
+        });
     },
     methods: {
-        showText() {
-            let titleIndex = 0;
-            let subtitleIndex = 0;
-            const titleInterval = setInterval(() => {
-                    if (titleIndex < this.title.length) {
-
-                    } else if (subtitleIndex < this.subtitle.length) {
-
-                    } else {
-
-                    }
-            }, this.delay);
-        }
     }
 }

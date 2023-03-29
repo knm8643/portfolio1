@@ -29,19 +29,24 @@ body {
 }
 
 .intro-star {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
-  background: url('../images/star.webp') repeat;
+  background-image: url('../images/star.webp'), url('../images/star.jpg'), url("../images/star.avif");
+  background-repeat: repeat;
   z-index: 0;
-  animation: star 60s linear infinite;
+  animation: star 20s ease-in-out infinite;
+  //animation: star 50s linear infinite;
+  animation-direction: alternate; /* 추가 */
+  animation-delay: 1.5s; /* 애니메이션 지연 시간 추가 */
+  animation-fill-mode : both forwards + backwards;
 }
 
 @keyframes star {
   0% {
-    transform: translateY(0);
+    transform: translateY(0px);
   }
   100% {
     transform: translateY(-2000px);
@@ -68,14 +73,19 @@ body {
   // Star background
   &::before {
     content: "";
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
-    background: url('../images/star.webp') repeat;
+    background-image: url('../images/star.webp'), url('../images/star.jpg'), url("../images/star.avif");
+    background-repeat: repeat;
     z-index: -1;
-    animation: star 60s linear infinite;
+    //animation: star 50s linear infinite;
+    animation: star 20s ease-in-out infinite;
+    animation-direction: alternate; /* 추가 */
+    animation-delay: 1.5s; /* 애니메이션 지연 시간 추가 */
+    animation-fill-mode : both forwards + backwards;
   }
 }
 
@@ -96,7 +106,7 @@ body {
 // Keyframes
 @keyframes star {
   0% {
-    transform: translateY(0);
+    transform: translateY(0px);
   }
   100% {
     transform: translateY(-2000px);
@@ -110,9 +120,50 @@ body {
 
 .intro-text .char {
   opacity: 0;
-  animation: fadeIn 1s ease-in-out forwards;
+  animation: fadeIn 2s ease-in-out forwards;
   animation-delay: calc(var(--i) * 0.1s);
 }
+
+/* 테스트 애니메이션 타이핑 효과 */
+.intro-text .subtitle {
+  font-size: 20px;
+  min-width:11px;
+  white-space: nowrap;
+  margin: 0;
+  position: fixed;
+  color: black;
+  //color: transparent;
+  top:53%;
+  left:47%;
+  transform: translate(-50%, -50%);
+}
+
+.intro-text .subtitle::before {
+  content: "Welcome to My Website!";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+  overflow: hidden;
+  border-right: 1px solid black;
+  animation: typing 5s steps(31) infinite;
+  animation-direction: alternate;
+}
+
+@keyframes typing{
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 125%;
+  }
+  100% {
+    width: 0%;
+  }
+}
+/* 테스트 애니메이션 타이핑 효과 */
 
 .intro-text .cursor {
   display: inline-block;
