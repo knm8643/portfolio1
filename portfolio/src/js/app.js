@@ -6,6 +6,7 @@ export default {
             title: "Hello World!",
             subtitle: "Welcome to My Website!",
             cursorVisible: true,
+            showModal: false
         };
     },
     mounted() {
@@ -20,5 +21,8 @@ export default {
         });
     },
     methods: {
+        showModals(){
+            this.showModal = true;
+        }
     }
 }

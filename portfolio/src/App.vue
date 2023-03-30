@@ -1,6 +1,6 @@
 <template>
   <div class="intro-page">
-    <div class="intro-text">
+    <div class="intro-text" @click="showModals()">
       <h1>
         <span class="char">{{ title }}</span>
         <span class="cursor" ref="titleCursor"></span>
@@ -8,12 +8,11 @@
          <br>
       <p>
         <span class="subtitle">{{ subtitle }}</span>
-        <router-link to="/"><button>들어가기</button></router-link>
         <span class="cursor" ref="subtitleCursor"></span>
       </p>
     </div>
     <div class="intro-star"></div>
-    <router-view></router-view>
+    <div class="modal" v-if="showModal"><router-view></router-view></div>
   </div>
 </template>
 
