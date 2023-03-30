@@ -1,6 +1,5 @@
 import {createRouter, createWebHistory} from "vue-router";
-import showYour from "@/components/showYour.vue";
-//npm install vue-router
+import showYour from "@/components/ShowYour.vue";
 
 const routes = [
     {

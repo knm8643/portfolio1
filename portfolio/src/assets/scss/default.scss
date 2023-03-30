@@ -84,7 +84,7 @@ body {
     //animation: star 50s linear infinite;
     animation: star 20s ease-in-out infinite;
     animation-direction: alternate; /* 추가 */
-    animation-delay: 1.5s; /* 애니메이션 지연 시간 추가 */
+    animation-delay: 1s; /* 애니메이션 지연 시간 추가 */
     animation-fill-mode : both forwards + backwards;
   }
 }
@@ -112,6 +112,24 @@ body {
     transform: translateY(-2000px);
   }
 }
+.intro-text h1{cursor: pointer;}
+.intro-text p{cursor: pointer;}
+/* 테스트*/
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  height: 200px;
+  width: 600px;
+  background: white;
+  border: 10px double white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+/* 테스트*/
 
 .intro-text h1,
 .intro-text p {
@@ -133,8 +151,8 @@ body {
   position: fixed;
   color: black;
   //color: transparent;
-  top:53%;
-  left:47%;
+  top:54%;
+  left:48%;
   transform: translate(-50%, -50%);
 }
 
@@ -157,7 +175,7 @@ body {
     width: 0%;
   }
   50% {
-    width: 125%;
+    width: 120%;
   }
   100% {
     width: 0%;
