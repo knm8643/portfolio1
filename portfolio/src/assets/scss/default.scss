@@ -116,19 +116,49 @@ body {
 .intro-text p{cursor: pointer;}
 /* 테스트*/
 .modal {
+  //margin: auto;
+  //position: absolute;
   position: fixed;
-  top: 50%;
-  left: 50%;
+  //top: 50%;
+  //left: 50%;
   transform: translate(-50%, -50%);
   z-index: 9999;
-  height: 200px;
-  width: 600px;
-  background: white;
-  border: 10px double white;
+  height: 300px;
+  width: 650px;
+  background: #DEE2E6;
+  border: 10px double #DEE2E6;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  //box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  animation: 0.4s ease-in-out 0s 1 normal forwards running cptskd;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px;
 }
+
+.modal--open {
+  opacity: 1;
+  visibility: visible;
+}
+.modal_close {
+  position: absolute;
+  top: -5px;
+  right: -1px;
+}
+
+@keyframes cptskd {
+  0% {
+    opacity: 0;
+    transform: translateY(400px) scale(0.75);
+  }
+  75% {
+    opacity: 1;
+    transform: translateY(-16px) scale(1);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
 /* 테스트*/
 
 .intro-text h1,
@@ -140,6 +170,16 @@ body {
   opacity: 0;
   animation: fadeIn 2s ease-in-out forwards;
   animation-delay: calc(var(--i) * 0.1s);
+  transition: all 0.2s ease-in-out;
+  font-size: 4.5rem; /* 글씨체 크기 설정 */
+}
+
+.intro-text .char:hover {
+  transform: scale(1.1);
+  font-size: 5rem; /* 마우스를 가져다 대면 글씨체 크기 증가 */
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+  //text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #33d9b2, 0 0 70px #33d9b2, 0 0 80px #33d9b2, 0 0 100px #33d9b2;
+  //color: #33d9b2;
 }
 
 /* 테스트 애니메이션 타이핑 효과 */
