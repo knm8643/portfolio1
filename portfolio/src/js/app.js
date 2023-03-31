@@ -21,8 +21,8 @@ export default {
         });
     },
     methods: {
-        showModals(){
-            this.showModal = true;
+        openModals(param){
+            this.showModal = (param=='true')?true:false;
         }
     }
 }
