@@ -6,6 +6,12 @@ const routes = [
         path: "/",
         name: "showYour",
         component: showYour,
+        children : [
+            {
+            path : "History",
+            components : import(/* webpackChunkName: "main" */ "@/components/HistoryMe"),
+            }        
+        ]
     },
 ]
 const router = createRouter({

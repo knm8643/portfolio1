@@ -1,6 +1,10 @@
 /* eslint-disable */
+import HistoryMe from "@/components/HistoryMe.vue";
 export default {
     name: 'App',
+    components:{
+        HistoryMe
+    },
     data() {
         return {
             title: "Hello World!",
@@ -23,6 +27,9 @@ export default {
     methods: {
         openModals(param){
             this.showModal = (param=='true')?true:false;
+            // if(this.showModal){
+            //     this.$router.push('/showYour/historyMe');
+            // }
         }
     }
 }
