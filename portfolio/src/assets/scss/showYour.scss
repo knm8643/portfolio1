@@ -1,6 +1,129 @@
 *{
   color: black;
 }
-.modal-window{
-  text-align: center;
+
+.messenger-window {
+  width: 400px;
+  height: 370px;
+  // bottom: 0;
+  // right: 50px;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+  position: fixed;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  background-color: #f5f5f5;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #ccc;
+}
+
+.name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.status {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: green;
+  margin-left: 10px;
+}
+
+.message-container {
+  height: calc(100% - 125px);
+  overflow-y: scroll;
+  padding: 10px;
+}
+
+.message {
+  margin-bottom: 10px;
+}
+
+.user .message-content {
+  background-color: #bfe6ff;
+  align-self: flex-end;
+  margin-left: 15%;
+}
+
+.message-content {
+  max-width: 80%;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #f5f5f5;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.message-text {
+  word-wrap: break-word;
+}
+
+.message-time {
+  font-size: 12px;
+  color: #666;
+  margin-top: 5px;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+}
+
+/* Input Message */
+.input-message {
+  flex: 1;
+  margin-right: 16px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.input-message:focus {
+  outline: none;
+  border-color: #4d90fe;
+  box-shadow: 0 0 0 1px #4d90fe;
+}
+
+/* Send Message Button */
+.send-message-button {
+  padding: 8px 16px;
+  background-color: #4d90fe;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.send-message-button:hover {
+  background-color: #357ae8;
+}
+
+.send-message-button:active {
+  background-color: #4d90fe;
+  box-shadow: none;
+  outline: none;
 }

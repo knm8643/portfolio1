@@ -1,11 +1,29 @@
 <template>
-  <div class="modal-window">
-    <div class="modal_intro">
-      저를 찾아주신걸 감사합니다! 당신은 어떤사람인가요?
+  <div class="messenger-window">
+  <div class="header">
+    <div class="avatar"></div>
+    <div class="name">만든이(이충재)</div>
+    <div class="status"></div>
+  </div>
+  <div class="message-container">
+    <div class="message">
+      <div class="message-content">
+        <div class="message-text">제 사이트를 방문해주셔 감사합니다</div>
+        <div class="message-time">10:00 AM</div>
+      </div>
     </div>
-    <div class="modal_review">
-      개인정보제공하기
+    <div class="message user">
+      <div class="message-content">
+        <div class="message-text">개인정보 제공 동의를 해주시겠어요? Y/N</div>
+        <div class="message-time">10:05 AM</div>
+      </div>
     </div>
+  </div>
+  <div class="input-container">
+    <input class="input-message" placeholder="메시지를 입력하세요">
+    <button class="send-message-button">보내기</button>
+  </div>
+
   </div>
 </template>
 

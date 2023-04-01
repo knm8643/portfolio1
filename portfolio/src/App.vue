@@ -19,6 +19,7 @@
           </svg>
       </div>
       <router-view></router-view>
+      <history-me/>
     </div>
   </div>
 </template>
