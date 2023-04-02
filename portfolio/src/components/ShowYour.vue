@@ -9,21 +9,26 @@
     <div class="message">
       <div class="message-content">
         <div class="message-text">제 사이트를 방문해주셔 감사합니다</div>
-        <div class="message-time">10:00 AM</div>
+        <div class="message-time">{{ todays }}</div>
       </div>
     </div>
-    <div class="message user">
+    <div class="message">
       <div class="message-content">
         <div class="message-text">개인정보 제공 동의를 해주시겠어요? Y/N</div>
-        <div class="message-time">10:05 AM</div>
+        <div class="message-time">{{ todays }}</div>
+      </div>
+    </div>
+    <div class="message user" v-for="(message, index) in inputMessage" :key="index">
+      <div class="message-content">
+        <div class="message-text">{{ message.text }} </div>
+        <div class="message-time">{{ message.time }}</div>
       </div>
     </div>
   </div>
   <div class="input-container">
-    <input class="input-message" placeholder="메시지를 입력하세요">
-    <button class="send-message-button">보내기</button>
+    <input v-model="insertMessage" class="input-message" placeholder="메시지를 입력하세요" @keyup.enter="sendUserMessage()">
+    <button class="send-message-button" @click="sendUserMessage()">보내기</button>
   </div>
-
   </div>
 </template>
 
