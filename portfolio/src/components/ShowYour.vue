@@ -6,15 +6,9 @@
     <div class="status"></div>
   </div>
   <div class="message-container">
-    <div class="message">
+    <div class="message" v-for="(cjmessage, index) in CJMessage" :key="index">
       <div class="message-content">
-        <div class="message-text">제 사이트를 방문해주셔 감사합니다</div>
-        <div class="message-time">{{ todays }}</div>
-      </div>
-    </div>
-    <div class="message">
-      <div class="message-content">
-        <div class="message-text">개인정보 제공 동의를 해주시겠어요? Y/N</div>
+        <div class="message-text">{{ cjmessage.msg }}</div>
         <div class="message-time">{{ todays }}</div>
       </div>
     </div>
