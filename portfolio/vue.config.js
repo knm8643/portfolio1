@@ -3,5 +3,5 @@ module.exports = defineConfig({
   transpileDependencies: true,
   publicPath : '/portfolio1/',
   // indexPath: '../dist/index.html',
-  outputDir : 'docs'
+  outputDir : 'build'
 })
