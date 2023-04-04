@@ -54,7 +54,7 @@ export default {
             this.insertMessage = '';
              */
             if (this.insertMessage == '') {
-                console.log('공란입력')
+                // console.log('공란입력')
             } else {
                 const message = {
                     text: this.insertMessage,
