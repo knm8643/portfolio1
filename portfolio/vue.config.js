@@ -2,7 +2,7 @@ const { defineConfig } = require('@vue/cli-service')
 module.exports = defineConfig({
   transpileDependencies: true,
   publicPath : '/portfolio1',
-  outputDir : 'docs'
+  outputDir : 'root'
   // css: {
   //   loaderOptions: {
   //     sass: {
