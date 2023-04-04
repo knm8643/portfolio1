@@ -1,0 +1,21 @@
+# .github/workflows/main.yml
+name: Build and Deploy
+on:
+  push:
+    branches:
+      - main
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout source code
+      uses: actions/checkout@v2
+      with:
+        submodules: 'recursive'
+    - name: Build and Deploy
+      uses: JamesIves/github-pages-deploy-action@4.1.2
+      with:
+        ACCESS_TOKEN: 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
+        BASE_BRANCH: main
+        BRANCH: gh-pages
+        FOLDER: docs
