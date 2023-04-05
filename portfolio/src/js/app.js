@@ -14,7 +14,7 @@ export default {
         };
     },
     mounted() {
-        this.$nextTick(() => {
+/*        this.$nextTick(() => {
             const star = document.querySelector('.intro-star');
             star.addEventListener('load', () => {
                 star.style.animation = 'star 20s ease-in-out infinite';
@@ -22,7 +22,7 @@ export default {
                 star.style.animation.delay = '1.5';
                 star.style.animation.fill.mode = 'forwards';
             });
-        });
+        });*/
     },
     methods: {
         openModals(param){

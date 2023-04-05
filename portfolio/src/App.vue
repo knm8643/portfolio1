@@ -1,4 +1,4 @@
-<template>
+<!--<template>
   <div class="intro-page">
     <div class="intro-text">
       <h1 @click="openModals('true')">
@@ -12,7 +12,7 @@
       </p>
     </div>
     <div class="intro-star"></div>
-    <div class="modal" :class="{ 'modal--open': showModal }" v-if="showModal">
+    <div class="modal" :class="{ 'modal&#45;&#45;open': showModal }" v-if="showModal">
       <div class="modal_close">
           <svg @click="openModals('false')" stroke="currentColor" fill="black" stroke-width="0" viewBox="0 0 24 24" tabindex="1" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
             <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path>
@@ -22,12 +22,16 @@
       <history-me/>
     </div>
   </div>
+</template>-->
+
+<template>
+    <router-view></router-view>
 </template>
 
 <script>
-import appJs from '@/js/app.js'
+import appJs from '@/js/app2.js'
 export default appJs;
 </script>
 
-<style lang="scss" src="@/assets/scss/default.scss">
+<style lang="scss" src="@/assets/scss/default2.scss">
 </style>
