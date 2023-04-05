@@ -1,0 +1,18 @@
+.mobile-wrapper{
+    text-align: center; // 삭제예정(1)
+    width: 100%; // 412px
+    .swiper-container{
+        height: 200px;
+        .swiper-slide-prev{
+            visibility: hidden;
+        }
+        .swiper-slide-next{
+            visibility: hidden;
+        }
+        .swiper-photo{
+            z-index: -1;
+            width: 412px;
+            height: 100%;
+        }
+    }
+}

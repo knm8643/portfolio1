@@ -13,7 +13,10 @@ div{
   width: 100%;
 }
 .main-item-left{
+  display: flex;
   position: fixed;
+  justify-content: center;
+  // align-items: center;
   z-index: 0;
   width: 100%;
   max-width: 412px;
@@ -39,6 +42,7 @@ div{
 @media screen and (max-width: 1060px) {
   body {
     background-color: black;
+    margin: auto;
   }
   .main-wrapper{
     display: grid;
@@ -55,7 +59,7 @@ div{
     flex: 1 1 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    // align-items: center;
     position: fixed;
     height: 100%;
     width: 412px;

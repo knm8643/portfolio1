@@ -3,6 +3,7 @@
 ## Project setup
 ```
 npm install
+npm install swiper
 ```
 
 ### Compiles and hot-reloads for development
