@@ -49,8 +49,20 @@
 }
 
 .img-wrapper {
+  margin-top: 50px;
   img {
     height: 100px;
-    opacity: 0.19; /* 투명도 조정 (0.0~1.0) */
+    animation: blink 2s infinite;
+  }
+}
+@keyframes blink {
+  0% {
+    opacity: 0.15;
+  }
+  50% {
+    opacity: 0.18;
+  }
+  100% {
+    opacity: 0.2;
   }
 }
