@@ -4,14 +4,54 @@
       <div class="swiper-container">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <img src="../assets/images/ME.png" class="swiper-photo" alt="">
+            <img src="../assets/images/ME3.webp" class="swiper-photo" alt="">
           </div>
           <div class="swiper-slide">
-            <img src="../assets/images/ME2.gif" class="swiper-photo" alt="">
+            <img src="../assets/images/ME3.webp" class="swiper-photo" alt="">
           </div>
         </div>
         <div class="swiper-pagination"></div>
       </div>
+    <p>모바일버전</p>
+    <p>모바일버전</p>
+    <p>모바일버전</p>
+    <p>모바일버전</p>
+    <p>모바일버전</p>
+    <p>모바일버전</p>
+    <p>모바일버전</p>
+    <p>모바일버전</p>
+    <p>모바일버전</p>
+    <p>모바일버전</p>
+    <p>모바일버전</p>
+    <p>모바일버전</p>
+    <p>모바일버전</p>
+    <p>모바일버전</p>
+    <p>모바일버전</p>
+    <p>모바일버전</p>
+    <p>모바일버전</p>
+    <p>모바일버전</p>
+    <p>모바일버전</p>
+    <p>모바일버전</p>
+    <p>모바일버전</p>
+    <p>모바일버전</p>
+    <p>모바일버전</p>
+    <p>모바일버전</p>
+    <p>모바일버전</p>
+    <p>모바일버전</p>
+    <p>모바일버전</p>
+    <p>모바일버전</p>
+    <p>모바일버전</p>
+    <p>모바일버전</p>
+    <p>모바일버전</p>
+    <p>모바일버전</p>
+    <p>모바일버전</p>
+    <p>모바일버전</p>
+    <p>모바일버전</p>
+    <p>모바일버전</p>
+    <p>모바일버전</p>
+    <p>모바일버전</p>
+    <p>모바일버전</p>
+    <p>모바일버전</p>
     <p>모바일버전</p>
   </div>
 </template>

@@ -8,7 +8,6 @@ export default {
             initialSlide: 1,
             loopAdditionalSlides : 1,
             spaceBetween: 30, 
-            slidesOffsetAfter: 30,
             pagination: {
                 el: '.swiper-pagination',
             },

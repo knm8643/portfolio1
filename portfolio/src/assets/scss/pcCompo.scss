@@ -4,22 +4,53 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
 .pcText-wrapper{
   width: 350px;
   height: 350px;
 }
 
 .search-input-box{
-  .reset-word{
+  height: 28px;
+  width: 200px; /* 너비를 지정합니다. */
+  display: flex; /* 부모 요소를 flex 컨테이너로 설정합니다. */
+  align-items: center; /* 세로 방향으로 중앙 정렬합니다. */
+  .reset-input{
+    font-size: 10pt;
+    height: 20.8px;
+  }
+  /*버튼 라이브러리 */
+  .reset-button{
+    flex-shrink: 0;
+    height: 26.75px;
+    border: 1px solid white;
+    background-color: rgba(0,0,0,0);
+    color: white;
+    font-size: small;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 10px;
+  }
+  .reset-button:hover{
     cursor: pointer;
+    color:black;
+    background-color: white;
   }
 }
 
 .word-wrapper{
   margin-top: 15px;
   .word{
+    font-weight: bold;
     cursor: pointer;
     margin-bottom: 10px;
   }
 }
 
+.img-wrapper {
+  img {
+    height: 100px;
+    opacity: 0.19; /* 투명도 조정 (0.0~1.0) */
+  }
+}
