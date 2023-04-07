@@ -10,15 +10,35 @@
             color: white;
             p{
                 font-weight: bold;
-                font-size: 14pt;
+                font-size: 15pt;
             }
             h1{
                 margin: auto;
-                font-size: 74pt;
+                font-size: 78pt;
             }
         }
     }
-    .mobile-footer{
+    .mobile-footer {
         height: 85px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .footer_line {
+            position: fixed;
+            border-bottom: 6.6px solid #ffffff;
+            border-radius: 6px;
+            cursor: pointer;
+
+            p {
+                color: #ffffff;
+                opacity: 0.6;
+                transition: opacity 0.5s ease;
+            }
+
+            p:hover {
+                opacity: 1;
+            }
+        }
     }
 }
