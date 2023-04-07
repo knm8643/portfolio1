@@ -3,6 +3,9 @@
   margin-right: 80px;
   .swiper-container{
     width: 500px;
+    p:hover{
+      cursor: pointer;
+    }
     .swiper-slide-prev{
       visibility: hidden;
     }

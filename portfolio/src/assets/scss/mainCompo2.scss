@@ -36,8 +36,14 @@
   .phone-wrapper {
     /* 모바일 크기에 맞춰서 변동 */
     //height: calc(100vh - 40px)!important;
+    background-color: transparent!important;
+    border-radius: 0%!important;
     max-height: calc(100vh - 40px)!important;
     margin: 0px auto 0!important;
+    border: 0!important;
+  }
+  .notch{
+    height: 0px!important;
   }
 }
 
