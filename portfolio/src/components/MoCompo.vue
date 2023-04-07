@@ -1,58 +1,22 @@
 <template>
   <div class="mobile-wrapper">
-    <h2>Mobile View</h2>
-      <div class="swiper-container">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img src="../assets/images/ME3.webp" class="swiper-photo" alt="">
-          </div>
-          <div class="swiper-slide">
-            <img src="../assets/images/ME3.webp" class="swiper-photo" alt="">
-          </div>
-        </div>
-        <div class="swiper-pagination"></div>
+    <div class="mobile-head">
+
+    </div>
+    <div class="mobile-body">
+      <div class="body-Time">
+        <p>{{ currentDate }}</p>
+        <h1>{{ currentTime }}</h1>
       </div>
-    <p>모바일버전</p>
-    <p>모바일버전</p>
-    <p>모바일버전</p>
-    <p>모바일버전</p>
-    <p>모바일버전</p>
-    <p>모바일버전</p>
-    <p>모바일버전</p>
-    <p>모바일버전</p>
-    <p>모바일버전</p>
-    <p>모바일버전</p>
-    <p>모바일버전</p>
-    <p>모바일버전</p>
-    <p>모바일버전</p>
-    <p>모바일버전</p>
-    <p>모바일버전</p>
-    <p>모바일버전</p>
-    <p>모바일버전</p>
-    <p>모바일버전</p>
-    <p>모바일버전</p>
-    <p>모바일버전</p>
-    <p>모바일버전</p>
-    <p>모바일버전</p>
-    <p>모바일버전</p>
-    <p>모바일버전</p>
-    <p>모바일버전</p>
-    <p>모바일버전</p>
-    <p>모바일버전</p>
-    <p>모바일버전</p>
-    <p>모바일버전</p>
-    <p>모바일버전</p>
-    <p>모바일버전</p>
-    <p>모바일버전</p>
-    <p>모바일버전</p>
-    <p>모바일버전</p>
-    <p>모바일버전</p>
-    <p>모바일버전</p>
-    <p>모바일버전</p>
-    <p>모바일버전</p>
-    <p>모바일버전</p>
-    <p>모바일버전</p>
-    <p>모바일버전</p>
+    </div>
+    <div class="mobile-footer">
+      <div class="potos">
+        
+      </div>
+      <div class="fire">
+
+      </div>
+    </div>
   </div>
 </template>
 

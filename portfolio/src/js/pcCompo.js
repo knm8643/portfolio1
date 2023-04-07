@@ -28,6 +28,14 @@ export default {
     });
   },
   methods: {
-
+    helpBtn(param){
+      if(param){
+        if(confirm('개인정보를 남겨주시겠어요?')){
+          prompt("아쉽게 아직","구현안됐습니다")
+        } else {
+          alert("아쉽지만 다음에 만나요")
+        }
+      }
+    }
   },
 }

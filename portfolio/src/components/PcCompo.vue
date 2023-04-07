@@ -1,22 +1,3 @@
-<!--<template>-->
-<!--  <div class="pc-wrapper">-->
-<!--    <div class="pcText-wrapper">-->
-<!--      <h2>저의 사이트에<br> 오신 걸 환영합니다</h2>-->
-<!--      <div class="search-input-box">-->
-<!--        <input class="reset-input" v-model="selectWord" placeholder="어떤게 궁금하신가요?" type="text" autocomplete="off">-->
-<!--        <button class="reset-button">클릭</button>-->
-<!--      </div>-->
-<!--      <div class="word-wrapper">-->
-<!--        <div class="word" v-for="(words, index) in word" v-bind:key="index" @click="selectWord = words">-->
-<!--          #{{ words }}-->
-<!--        </div>-->
-<!--      </div>-->
-<!--      <div class="img-wrapper">-->
-<!--        <img src="../assets/images/backImg5.jpg">-->
-<!--      </div>-->
-<!--    </div>-->
-<!--  </div>-->
-<!--</template>-->
 <template>
   <div class="pc-wrapper">
     <div class="swiper-container">
@@ -33,12 +14,13 @@
         </div>
         <div class="swiper-slide">
           <div class="pc-intro">
-            <span>Hello World!</span>
+            <span>Hello World</span>
           </div>
-          <div>
+          <div class="pc_mainIntro">
             <h1>이충재의 iPhone 접근하기</h1>
-            <p>아무말대잔치아무말대잔치아무말대잔치아무말대잔치아무말대잔치아무말대잔치아무말대잔치아무말대잔치
-            </p>
+            <p><a href="https://iodized-barberry-382.notion.site/7f151766ec8842da96553fbfa838fba8">노션 접속하기</a></p>
+            <p><a href="https://github.com/knm8643">깃 접속하기</a></p>
+            <p>아무말대잔치아무말대잔치아무말대잔치아무말대잔치아무말대잔치아무말대잔치아무말대잔치아무말대잔치</p>
           </div>
         </div>
       </div>
@@ -46,8 +28,8 @@
     </div>
     <div class="box-container">
       <span>도움이 되었습니까?</span>
-      <button class="box-btn_1">예</button>
-      <button class="box-btn_2">아니요</button>
+      <button class="box-btn_1" @click="helpBtn('Y')">예</button>
+      <button class="box-btn_2" @click="helpBtn('N')">아니요</button>
     </div>
   </div>
 </template>

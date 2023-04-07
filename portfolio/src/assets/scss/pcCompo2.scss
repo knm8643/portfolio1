@@ -20,8 +20,19 @@
     font-weight: 500;
     letter-spacing: .015em;
   }
+
+  .pc_mainIntro{
+    a{
+      text-decoration-line: none;
+      color: black;
+    }
+    a:hover{
+      color: #0070c9;
+    }
+  }
+
   .box-container{
-    height: 500px;
+    height: 370px;
     border-bottom: 1px solid rgba(51,51,51,.2);
     button{
       color: #0070c9;
@@ -45,7 +56,7 @@
     color: #333;
     padding: 5px 10px;
     font-size: 14px;
-    line-height: 67.125;
+    line-height: 49.125;
     font-weight: 1000;
     letter-spacing: .015em;
   }

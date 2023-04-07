@@ -1,18 +1,24 @@
 .mobile-wrapper{
-    text-align: center; // 삭제예정(1)
-    width: 100%; // 412px
-    .swiper-container{
-        height: 200px;
-        .swiper-slide-prev{
-            visibility: hidden;
+    .mobile-head{
+        height: 30px;
+    }
+    .mobile-body{
+        height: 580px;
+        .body-Time{
+            margin-top: 75px;
+            text-align: center;
+            color: white;
+            p{
+                font-weight: bold;
+                font-size: 14pt;
+            }
+            h1{
+                margin: auto;
+                font-size: 74pt;
+            }
         }
-        .swiper-slide-next{
-            visibility: hidden;
-        }
-        .swiper-photo{
-            z-index: -1;
-            width: 412px;
-            height: 100%;
-        }
+    }
+    .mobile-footer{
+        height: 85px;
     }
 }
