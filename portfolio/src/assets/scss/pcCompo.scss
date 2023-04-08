@@ -29,13 +29,13 @@
       text-decoration-line: none;
       color: black;
     }
-    a:hover{
+    p:hover,a:hover{
       color: #0070c9;
     }
   }
 
   .box-container{
-    height: 370px;
+    height: 330px;
     border-bottom: 1px solid rgba(51,51,51,.2);
     button{
       color: #0070c9;
@@ -59,7 +59,7 @@
     color: #333;
     padding: 5px 10px;
     font-size: 14px;
-    line-height: 49.125;
+    line-height: 43.125;
     font-weight: 1000;
     letter-spacing: .015em;
   }

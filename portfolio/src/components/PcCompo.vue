@@ -15,13 +15,13 @@
         </div>
         <div class="swiper-slide">
           <div class="pc-intro">
-            <span>Hello World</span>
+            <span>iPhone사용 문의하기</span>
           </div>
           <div class="pc_mainIntro">
             <h1>이충재의 iPhone 접근하기</h1>
             <p><a href="https://iodized-barberry-382.notion.site/7f151766ec8842da96553fbfa838fba8">노션 접속하기</a></p>
             <p><a href="https://github.com/knm8643">깃 접속하기</a></p>
-            <p>지구최강의 사나이 제가 궁금하신가요?</p>
+            <p @click="helpBtn('info')">지구최강의 사나이 제가 궁금하신가요?</p>
           </div>
         </div>
       </div>

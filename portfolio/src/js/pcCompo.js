@@ -28,13 +28,17 @@ export default {
     });
   },
   methods: {
-    helpBtn(param){
-      if(param){
-        if(confirm('개인정보를 남겨주시겠어요?')){
-          prompt("이메일 주소를 알려주세요","아쉽게도 구현 안됐습니다.")
-        } else {
-          alert("아쉽지만 다음에 만나요")
-        }
+    helpBtn(param) {
+      switch (param) {
+        case 'info':
+          alert('010-5696-1909\nknm8643@nate.com')
+          break;
+        case 'Y':
+          alert('도움이 되었다니 다행입니다^^ 연락주세요.')
+          break;
+        case 'N':
+          alert('아쉽지만 다음에 만나요.')
+          break;
       }
     }
   },
