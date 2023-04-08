@@ -40,5 +40,5 @@ import psCompo from "@/js/pcCompo.js"
 export default psCompo
 </script>
 
-<style lang="scss" src="@/assets/scss/pcCompo2.scss">
+<style lang="scss" src="@/assets/scss/pcCompo.scss">
 </style>

@@ -1,5 +1,9 @@
 .mobile-wrapper{
     .mobile-head{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
         height: 30px;
     }
     .mobile-body{
@@ -25,7 +29,6 @@
         align-items: center;
 
         .footer_line {
-            position: fixed;
             border-bottom: 6.6px solid #ffffff;
             border-radius: 6px;
             cursor: pointer;

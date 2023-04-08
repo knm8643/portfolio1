@@ -2,6 +2,8 @@ import {createRouter, createWebHistory} from "vue-router";
 import MoComponents from "@/components/MoCompo.vue";
 import PcComponents from "@/components/PcCompo.vue";
 import MainCompo from "@/components/MainCompo.vue";
+import MoMainCompo from "@/components/MoMainCompo.vue";
+import MoBackCompo from "@/components/MoBackCompo.vue";
 
 const routes = [
     {
@@ -11,7 +13,11 @@ const routes = [
         children:[
             {
                 path : "Mo",
-                component : MoComponents
+                component : MoComponents,
+                children:[
+                    { path: "moMain", name: "moMain", component: MoMainCompo},
+                    { path: "moBack", name: "moBack", component: MoBackCompo}
+                ]
             },
             {
                 path: "Pc",

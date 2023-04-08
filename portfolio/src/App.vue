@@ -3,9 +3,10 @@
 </template>
 
 <script>
-import appJs from '@/js/app2.js'
-export default appJs;
+export default {
+  name: 'App',
+}
 </script>
 
-<style lang="scss" src="@/assets/scss/default2.scss">
+<style lang="scss" src="@/assets/scss/default.scss">
 </style>

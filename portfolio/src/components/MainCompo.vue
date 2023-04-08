@@ -21,5 +21,5 @@ import mainCompo from "@/js/mainCompo.js";
 export default mainCompo
 </script>
 
-<style lang="scss" src="@/assets/scss/mainCompo2.scss">
+<style lang="scss" src="@/assets/scss/mainCompo.scss">
 </style>
