@@ -1,0 +1,86 @@
+.safari-box{
+  p,img, a{
+    cursor: pointer;
+  }
+
+  height: 100%;
+  width: 100%;
+  background-image: url("../images/safBack.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 51%;
+
+  .safari-header{
+    height: 100px;
+
+    .header-font{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: #ffffff;
+      h4 {
+        margin-top: 75px;
+        margin-left: 27px;
+        font-size: 14.3pt;
+      }
+      p {
+        font-size: small;
+        margin-top: 75px;
+        margin-right: 27px;
+      }
+    }
+  }
+
+  .safari-body{
+    .body-icon{
+      .icon_list_1,
+      .icon_list_2{
+        position: relative;
+        display: inline-block;
+        width: 65px;
+        margin-left: 5%;
+        margin-top: 10%;
+        p{
+          font-weight: bold;
+          text-align: center;
+          font-size: small;
+          color: #ffffff;
+          margin: auto;
+        }
+        img{
+          object-fit: cover;
+          width: 65px;
+          border-radius: 15px;
+          box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+        }
+      }
+
+      .icon_list_1:hover,
+      .icon_list_2:hover{
+        transform: scale(1.09);
+        transition: transform 0.2s ease-in-out;
+      }
+    }
+
+    .body-footer{
+      height: 100px;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      a{
+        color: #ffffff;
+        background-color: rgba(159 134 134 / 50%);
+        display: inline-block;
+        padding: 0.5px 12px;
+        border: 1px solid #000;
+        border-radius: 30px;
+        font-size: 13.9px;
+        font-weight: bold;
+        text-decoration: none;
+      }
+
+    }
+  }
+}

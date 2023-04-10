@@ -4,6 +4,8 @@ import PcComponents from "@/components/PcCompo.vue";
 import MainCompo from "@/components/MainCompo.vue";
 import MoMainCompo from "@/components/MoMainCompo.vue";
 import MoBackCompo from "@/components/MoBackCompo.vue";
+import HalfClub from "@/components/HalfClub.vue";
+import Safari from "@/components/Safari.vue";
 
 const routes = [
     {
@@ -16,7 +18,9 @@ const routes = [
                 component : MoComponents,
                 children:[
                     { path: "moMain", name: "moMain", component: MoMainCompo},
-                    { path: "moBack", name: "moBack", component: MoBackCompo}
+                    { path: "moBack", name: "moBack", component: MoBackCompo},
+                    { path: "halfClub", name: "halfClub", component: HalfClub},
+                    { path: "safari", name: "safari", component: Safari}
                 ]
             },
             {

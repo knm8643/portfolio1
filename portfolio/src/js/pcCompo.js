@@ -31,7 +31,7 @@ export default {
     helpBtn(param) {
       switch (param) {
         case 'info':
-          alert('010-5696-1909\nknm8643@nate.com')
+          alert('이충재\n010-5696-1909\nknm8643@nate.com')
           break;
         case 'Y':
           alert('도움이 되었다니 다행입니다^^ 연락주세요.')
