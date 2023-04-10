@@ -4,7 +4,7 @@ export default {
     },
     methods:{
         sendUrl(param){
-            console.log(param)
+            alert(param)
         }
     }
 }
