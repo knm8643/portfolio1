@@ -9,7 +9,12 @@
       </div>
     </div>
     <div class="mobile-nbody">
-      위치확인2
+      <div class="mobile-nbody-first">
+        <div class="first-box_1">
+          <img src="../assets/images/halfclub.png">
+          <p>하프클럽</p>
+        </div>
+      </div>
     </div>
     <div class="mobile-nfooter">
       <div class="nfooter-box">
