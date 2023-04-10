@@ -1,3 +1,7 @@
+@function ptr($px) {
+    @return #{($px)*0.01}rem;
+}
+
 .mobile-wrapper{
     .mobile-head{
         justify-content: center;
@@ -13,7 +17,7 @@
         }
     }
     .mobile-body{
-        height: 385px;
+        height: ptr(3850);
         .body-Time{
             margin-top: 75px;
             text-align: center;

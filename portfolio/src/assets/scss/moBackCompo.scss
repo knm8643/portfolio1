@@ -1,3 +1,7 @@
+@function ptr($px) {
+  @return #{($px)*0.01}rem;
+}
+
 .mobile-nwrapper {
   img:hover{
     cursor: pointer;
@@ -25,7 +29,7 @@
     }
   }
   .mobile-nbody{
-    height: 510px;
+    height: ptr(4200);
     img{
       object-fit: cover;
       width: 70px;
