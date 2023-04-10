@@ -31,13 +31,10 @@ export default {
         },
         mainicon(param) {
             switch (param){
-                case 'halfclub':
-                    this.$router.push({ name: "halfClub" });
-                    break;
                 case 'safari':
                     this.$router.push({ name: "safari" });
                     break;
-                default:
+                default :
                     alert('당신이 누른 영역은 : ' + param + '\n현재 구현된 페이지 : safari')
                     break;
             }

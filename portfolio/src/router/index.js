@@ -6,6 +6,7 @@ import MoMainCompo from "@/components/MoMainCompo.vue";
 import MoBackCompo from "@/components/MoBackCompo.vue";
 import HalfClub from "@/components/HalfClub.vue";
 import Safari from "@/components/Safari.vue";
+import SimliTest from "@/components/SimliTest.vue";
 
 const routes = [
     {
@@ -20,7 +21,8 @@ const routes = [
                     { path: "moMain", name: "moMain", component: MoMainCompo},
                     { path: "moBack", name: "moBack", component: MoBackCompo},
                     { path: "halfClub", name: "halfClub", component: HalfClub},
-                    { path: "safari", name: "safari", component: Safari}
+                    { path: "safari", name: "safari", component: Safari},
+                    { path: "simliTest", name: "simliTest", component: SimliTest}
                 ]
             },
             {

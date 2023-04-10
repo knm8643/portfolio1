@@ -13,7 +13,7 @@
           <p>심리테스트</p>
         </div>
         <div class="icon_list_2">
-          <img src="../assets/images/none.jpg" @click="sendUrl('notYet')">
+          <img src="../assets/images/apples.png" @click="sendUrl('notYet')">
           <p>개발중</p>
         </div>
       </div>
