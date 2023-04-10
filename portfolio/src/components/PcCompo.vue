@@ -10,7 +10,7 @@
             <h1>iPhone 잠금 화면 해제하기</h1>
             <p>iPhone을 클릭하거나 터치하면 잠금화면이 해제됩니다. 이충재님만의 iPhone을 확인해보세요.
             </p>
-            <p style="font-weight: bold">다음</p>
+            <p class="next-slide">다음</p>
           </div>
         </div>
         <div class="swiper-slide">
