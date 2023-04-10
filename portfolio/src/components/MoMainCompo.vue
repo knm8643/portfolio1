@@ -1,6 +1,10 @@
 <template>
   <div class="mobile-wrapper">
-    <div class="mobile-head"></div>
+    <div class="mobile-head">
+      <img src="../assets/images/signal.png">
+      <img src="../assets/images/5g.png">
+      <img src="../assets/images/battery.png">
+    </div>
     <div class="mobile-body">
       <div class="body-Time">
         <p>{{ currentDate }}</p>

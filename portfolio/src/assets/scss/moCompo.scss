@@ -1,10 +1,16 @@
 .mobile-wrapper{
     .mobile-head{
-        display: flex;
         justify-content: center;
         align-items: center;
-
+        text-align: right;
+        margin-right: 32px;
+        margin-top: 5px;
         height: 30px;
+        img{
+            filter: invert(1);
+            object-fit: cover;
+            width: 20px;
+        }
     }
     .mobile-body{
         height: 385px;

@@ -1,13 +1,23 @@
 <template>
-  <div class="mobile-wrapper">
+  <div class="mobile-nwrapper">
     <div class="mobile-nhead">
-      <h1>해더 위치 확인</h1>
+      <p>{{ currentTime }}</p>
+      <div class="mobile-img">
+        <img src="../assets/images/signal.png">
+        <img src="../assets/images/5g.png">
+        <img src="../assets/images/battery.png">
+      </div>
     </div>
     <div class="mobile-nbody">
-      <img src="../assets/images/ME.jpeg">
+      위치확인2
     </div>
     <div class="mobile-nfooter">
-      <h1>모바일영역 개발중<br>피씨버전으로도 봐주세요</h1>
+      <div class="nfooter-box">
+        <img src="../assets/images/applecall.png" @click="mainicon('call')">
+        <img src="../assets/images/message.png" @click="mainicon('message')">
+        <img src="../assets/images/safari.png" @click="mainicon('safari')">
+        <img src="../assets/images/settings.png" @click="mainicon('setting')">
+      </div>
     </div>
   </div>
 </template>

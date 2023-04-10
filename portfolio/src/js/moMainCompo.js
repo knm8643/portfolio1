@@ -22,7 +22,7 @@ export default {
             // 데이터 업데이트
             this.currentTime = time;
             this.currentDate = dateStr;
-        }, 1000);
+        }, 100);
     },
     methods: {
         // 숫자를 2자리 문자열로 변환 (앞에 0 붙임)

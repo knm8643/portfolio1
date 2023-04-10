@@ -50,8 +50,8 @@
 /* 아이폰 테두리 영역 */
 .phone-wrapper {
   position: relative;
-  width: 375px; /* 아이폰 XR 기준 화면 가로 크기 */
-  height: 712px; /* 아이폰 XR 기준 화면 세로 크기 */
+  width: 345px; /* 아이폰 XR 기준 화면 가로 크기 */
+  height: 692px; /* 아이폰 XR 기준 화면 세로 크기 */
 
   //background-image: url("../images/phoneback.jpg");
   background-color: #000;
@@ -102,7 +102,7 @@
   position: absolute;
   top: 1px;
   left: 0;
-  width: 375px;
+  width: 345px;
   height: calc(100% - 1px);
   background-image: url("../images/phoneback2.png");
   //background-color: #fff;
