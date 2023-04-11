@@ -32,14 +32,6 @@
           <img src="../assets/images/apples.png" @click="sendUrl('notYet')">
           <p>개발중</p>
         </div>
-        <div class="icon_list_2">
-          <img src="../assets/images/apples.png" @click="sendUrl('notYet')">
-          <p>개발중</p>
-        </div>
-        <div class="icon_list_2">
-          <img src="../assets/images/apples.png" @click="sendUrl('notYet')">
-          <p>개발중</p>
-        </div>
       </div>
       <h4>들어보기</h4>
       <div class="body-footer">
