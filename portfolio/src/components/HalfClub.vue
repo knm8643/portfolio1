@@ -1,6 +1,7 @@
 <template>
-  <div>
-    <h1>아직 개발중입니다</h1>
+  <div class="halfclub_box">
+    <a class="btn_t_cate"><i class="i_t_cate"></i></a>
+    <h1>클론코딩재밌네</h1>
   </div>
 </template>
 
@@ -10,6 +11,5 @@ export default {
 }
 </script>
 
-<style scoped>
-
+<style lang="scss" src="@/assets/scss/halfClub.scss">
 </style>

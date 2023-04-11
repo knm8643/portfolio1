@@ -1,12 +1,13 @@
 <template>
   <div class="survey-container">
-    <h2 class="survey-title">당신은 어떤 사람인가요?</h2>
-    <p>{{ question.soTitle }}</p>
+    <h2  v-show="question.mainTitle" class="survey-title">{{ question.mainTitle }}</h2>
+    <p v-show="question.soTitle">{{ question.soTitle }}</p>
     <div class="survey_body">
-      <button @click="sendInfo('A')">{{ question.options[0] }}</button>
-      <button @click="sendInfo('B')">{{ question.options[1] }}</button>
+      <button v-show="question.options[0]" @click="sendInfo('A', question.options[0])">{{ question.options[0] }}</button>
+      <button v-show="question.options[1]" @click="sendInfo('B', question.options[1])">{{ question.options[1] }}</button>
       <button v-show="question.options[2]" @click="sendInfo('C')">{{ question.options[2] }}</button>
     </div>
+    <div v-if="isLoading" class="loading-spinner"></div>
   </div>
 </template>
 

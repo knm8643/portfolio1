@@ -1,0 +1,17 @@
+.halfclub_box{
+  margin-top: 50px;
+  width: 100%;
+  background: #fff;
+  border-bottom: 1px solid #d0d0d0;
+  height: 500px;
+  .btn_t_cate{
+    left: 0.26rem;
+  }
+
+  .i_t_cate {
+    width: 0.48rem;
+    height: 0.48rem;
+    background: url(	https://static-s.halfclub.com/cdn_hm/components/assets/images/common/ico_t_cate.png) no-repeat 0 0;
+    background-size: cover;
+  }
+}

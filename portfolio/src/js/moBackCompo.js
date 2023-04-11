@@ -31,11 +31,14 @@ export default {
         },
         mainicon(param) {
             switch (param){
+                case 'halfclub':
+                    this.$router.push({ name: "halfClub" });
+                    break;
                 case 'safari':
                     this.$router.push({ name: "safari" });
                     break;
                 default :
-                    alert('당신이 누른 영역은 : ' + param + '\n현재 구현된 페이지 : safari')
+                    alert('해당페이지 미구현 \n현재 구현된 페이지 : safari')
                     break;
             }
         }
