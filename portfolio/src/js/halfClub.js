@@ -1,5 +1,5 @@
 import Swiper from "swiper";
-
+/* eslint-disable */
 export default {
     name: "HalfClub",
     data(){
@@ -25,10 +25,10 @@ export default {
         });
 
         // 첫번째 슬라이드 클릭 시 다음 슬라이드로 이동
-        const firstSlide = document.querySelector('.swiper-slide:first-child');
-        firstSlide.addEventListener('click', () => {
-            swiper.slideNext();
-        });
+        // const firstSlide = document.querySelector('.swiper-slide:first-child');
+        // firstSlide.addEventListener('click', () => {
+        //     swiper.slideNext();
+        // });
     },
     methods:{
         getDisplay(){
@@ -42,6 +42,9 @@ export default {
                 );
 
                 this.dispDataList = cornerList;
+
+                console.log(this.dispDataList)
+
                 if (filteredList.length > 0) {
                     const mainBanners = []
                     for (let i = 0; i < filteredList.length; i++) {

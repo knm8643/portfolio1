@@ -1,10 +1,9 @@
 import Swiper from "swiper";
-
+/* eslint-disable */
 export default {
   name: "PcComponents",
   data() {
     return {
-
     }
   },
   mounted() {

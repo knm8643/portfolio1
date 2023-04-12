@@ -21,7 +21,16 @@
       </div>
     </div>
     <div class="main-body">
-      <h1>전시위치확인</h1>
+      <div v-if="dispDataList">
+        <div v-for="(item2, index2) in dispDataList" :key="index2">
+          <div>
+            {{ item2.cornerTitle }}
+          </div>
+        </div>
+      </div>
+      <div v-else>
+        <h1>Error</h1>
+      </div>
     </div>
   </div>
 </template>

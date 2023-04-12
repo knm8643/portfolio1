@@ -112,6 +112,9 @@
 }
 
 .screen {
+  //요소숨기기
+  overflow-x: hidden;
+
   position: absolute;
   top: 1px;
   left: 0;

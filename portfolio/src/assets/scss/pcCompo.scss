@@ -1,8 +1,11 @@
 .pc-wrapper{
   height: 600px;
   margin-right: 80px;
+
   .swiper-container{
     width: 500px;
+    overflow-x: hidden;
+
     .next-slide{
       font-weight: bold
     }
@@ -11,12 +14,6 @@
     }
     p:hover{
       cursor: pointer;
-    }
-    .swiper-slide-prev{
-      visibility: hidden;
-    }
-    .swiper-slide-next{
-      visibility: hidden;
     }
   }
 
