@@ -1,10 +1,12 @@
 .pc-wrapper{
   height: 600px;
-  margin-right: 80px;
+  margin-right: 120%;
+  width: 500px;
 
   .swiper-container{
     width: 500px;
     overflow-x: hidden;
+    position: absolute;
 
     .next-slide{
       font-weight: bold
@@ -27,7 +29,34 @@
     letter-spacing: .015em;
   }
 
-  .pc_mainIntro{
+  /* 애니메이션 효과 테스트 start */
+  .pc_mainIntro_2{
+    margin-top: 63px;
+    img{
+      object-fit: cover;
+      width: 280px;
+      height:305px;
+      border-radius: 76px;
+    }
+
+    .mainIntro-content {
+      display: flex;
+      align-items: center;
+      span{
+        font-size: medium;
+        font-weight: bold;
+        margin-left: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+      }
+    }
+  }
+
+  /* 애니메이션 효과 테스트 end */
+
+  .pc_mainIntro_1{
     a{
       text-decoration-line: none;
       color: black;
@@ -38,7 +67,9 @@
   }
 
   .box-container{
+    position: absolute;
     height: 260px;
+    margin-top:300px;
     border-bottom: 1px solid rgba(51,51,51,.2);
     button{
       color: #0070c9;

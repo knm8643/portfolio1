@@ -33,7 +33,7 @@ export default {
           alert('이충재\n010-5696-1909\nknm8643@nate.com')
           break;
         case 'Y':
-          alert('도움이 되었다니 다행입니다^^ 연락주세요.')
+          alert('마음에 드신다니 다행입니다^^더 추가될 예정이에요 연락주세요.')
           break;
         case 'N':
           alert('아쉽지만 다음에 만나요.')
