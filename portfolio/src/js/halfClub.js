@@ -5,14 +5,28 @@ export default {
     data(){
       return{
           dispDataList: [],
-          mainBigBanner: []
+          mainBigBanner: [],
+          activeIndex: 0,
+          items: ['베스트', '기획전', '백화점', '이벤트', '브랜드', '아이템1','하프클럽','재미없네','다른거할까']
       }
+    },
+    computed:{
+        containerStyle() {
+            return {
+                transform: `translateX(-${this.activeIndex * 17}%)`
+            };
+        },
+        slideStyle() {
+            return {
+                width: `${100 / this.items.length}%`
+            };
+        }
     },
     mounted(){
         this.getDisplay();
 
         const swiper = new Swiper('.swiper-container', {
-            initialSlide: 0, // 첫번째 슬라이드로 설정
+            initialSlide: 0,
             loopAdditionalSlides : 1,
             spaceBetween: 30,
             pagination: {
@@ -23,14 +37,18 @@ export default {
                 disableOnInteraction: false, // 사용자의 상호작용에 의해 자동 슬라이드를 멈추지 않도록 설정
             },
         });
-
-        // 첫번째 슬라이드 클릭 시 다음 슬라이드로 이동
-        // const firstSlide = document.querySelector('.swiper-slide:first-child');
-        // firstSlide.addEventListener('click', () => {
-        //     swiper.slideNext();
-        // });
     },
     methods:{
+        prevSlide() {
+            if (this.activeIndex > 0) {
+                this.activeIndex--;
+            }
+        },
+        nextSlide() {
+            if (this.activeIndex < this.items.length - 1) {
+                this.activeIndex++;
+            }
+        },
         getDisplay(){
             this.$axios({
                 url: "https://apix.halfclub.com/display/templates/templateByCategoryCd?categoryCd=D22589&countryCd=001&deviceCd=001&langCd=001&mandM=halfclub&siteCd=1",

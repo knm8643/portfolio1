@@ -4,12 +4,17 @@
       <h2>My halfClub</h2>
     </div>
     <div class="main-text_2">
-      <a>test1</a>
-      <a>test2</a>
-      <a>test3</a>
-      <a>test4</a>
-      <a>test5</a>
-      <a>test6</a>
+      <div class="slider">
+        <div class="slider__container" :style="containerStyle">
+          <div class="slider__slide" v-for="(item, index) in items" :key="index" :style="slideStyle">
+            <div class="slider__content">{{ item }}</div>
+          </div>
+        </div>
+        <div class="slider__controls">
+          <button @click="prevSlide">&lt;</button>
+          <button @click="nextSlide">&gt;</button>
+        </div>
+      </div>
     </div>
     <div class="main-banner">
       <div class="swiper-container">

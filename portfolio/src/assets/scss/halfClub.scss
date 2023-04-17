@@ -17,14 +17,32 @@
   }
 
   .main-text_2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    a {
-      display: block;
-      margin: 5px;
-      padding: 5px;
-      background-color: #eee;
+    width: 185%;
+    white-space: nowrap; /* 자식 요소들이 한 줄에 나열되도록 함 */
+    overflow: hidden; /* 넘치는 요소들은 숨김 처리 */
+    .slider{
+      height: 45px;
+      .slider__container{
+        margin-left: 10px;
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory; /* 스냅 효과 적용 */
+        scrollbar-width: none; /* 기본 스크롤바 숨김 */
+        -ms-overflow-style: none; /* IE, Edge용 스크롤바 숨김 */
+      }
+      .slider__container::-webkit-scrollbar {
+        display: none;
+      }
+      .slider__controls{
+        margin-left: 10px;
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+        width: 50%!important;
+        button{
+          border: none;
+        }
+      }
     }
   }
 
