@@ -55,11 +55,8 @@ export default {
                 method: "get",
             }).then((response) => {
                 const cornerList = response.data.data[0].cornerList;
-                const filteredList = cornerList.filter(
-                    (item) => item.dispCornerCd === "HP_FM_001"
-                );
-
-                this.dispDataList = cornerList;
+                const filteredList = cornerList.filter((item) => item.dispCornerCd === "HP_FM_001");
+                this.dispDataList = cornerList.filter((item) => item.cornerTitle !== "" && item.cornerGroupList[0].cornerContentList[0].detailList[0].productSummary.basicExtNm)
 
                 console.log(this.dispDataList)
 

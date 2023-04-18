@@ -29,7 +29,12 @@
       <div v-if="dispDataList">
         <div v-for="(item2, index2) in dispDataList" :key="index2">
           <div>
-            {{ item2.cornerTitle }}
+            <h2>{{ item2.cornerTitle }}</h2>
+            <img :src="`https://cdn2.halfclub.com/rimg/720x360/${item2.cornerGroupList[0].cornerContentList[0].detailList[0].productSummary.basicExtNm}`" />
+            <div class="body-text">
+              <span>{{ item2.cornerGroupList[0].cornerContentList[0].detailList[0].productSummary.prdNm }}</span>
+              <p>{{ item2.cornerGroupList[0].cornerContentList[0].detailList[0].productSummary.price.toLocaleString() }}원</p>
+            </div>
           </div>
         </div>
       </div>
