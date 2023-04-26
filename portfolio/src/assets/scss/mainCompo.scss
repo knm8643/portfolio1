@@ -1,10 +1,23 @@
 /* 외부 컨테이너 */
+#app{
+  background: rgb(242, 239, 237);
+}
+
 .main-wrapper {
   margin-top: -10px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+}
+.main-wrapper::before {
+  content : "";
+  background-color: white;
+  position: fixed;
+  top: 0;
+  border-radius: 2%;
+  width: 1150px;
+  height: 100%;
 }
 
 .main-item-left {
@@ -28,7 +41,7 @@
 
 /* 스크린 축소될시 */
 @media screen and (max-width: 980px) {
-  body{
+  body {
     margin: 0;
     background-color: black;
   }
@@ -36,41 +49,48 @@
   .main-item-left {
     display: none;
   }
-  .main-item-right{
+
+  .main-item-right {
     //height: 100%;
   }
-  .phone-body{
-    border-radius: 0%!important;
+
+  .phone-body {
+    border-radius: 0% !important;
   }
 
   .phone-wrapper {
-    position: inherit!important;
+    position: inherit !important;
 
     //width: 100%!important;
     /* 모바일 크기에 맞춰서 변동 */
     //height: calc(100vh - 40px)!important;
-    background-color: transparent!important;
-    border-radius: 0%!important;
-    max-height: calc(100vh - 40px)!important;
-    margin: 0px auto 0!important;
-    border: 0!important;
+    background-color: transparent !important;
+    border-radius: 0% !important;
+    max-height: calc(100vh - 40px) !important;
+    margin: 0px auto 0 !important;
+    border: 0 !important;
   }
-  .notch{
-    height: 0px!important;
+
+  .notch {
+    height: 0px !important;
   }
 }
 
 /* 아이폰 테두리 영역 */
 .phone-wrapper {
   position: relative;
-  width: 340px; /* 아이폰 XR 기준 화면 가로 크기 */
-  height: 642px; /* 아이폰 XR 기준 화면 세로 크기 */
+  width: 340px;
+  /* 아이폰 XR 기준 화면 가로 크기 */
+  height: 642px;
+  /* 아이폰 XR 기준 화면 세로 크기 */
 
   //background-image: url("../images/phoneback.jpg");
   background-color: #000;
 
-  border-radius: 70px; /* 아이폰 XR 기준 테두리 곡선 크기 */
-  overflow: hidden; /* 테두리를 벗어나는 내용은 보이지 않도록 설정 */
+  border-radius: 70px;
+  /* 아이폰 XR 기준 테두리 곡선 크기 */
+  overflow: hidden;
+  /* 테두리를 벗어나는 내용은 보이지 않도록 설정 */
 
   /* 아이폰 XR 기준 화면 가운데 위치하도록 설정 */
   margin: 85px 0 145px;
@@ -124,8 +144,10 @@
   background-image: url("../images/phoneback.jpg");
   //background-color: #fff;
   background-size: cover;
-  -ms-overflow-style: none; /* 인터넷 익스플로러 */
-  scrollbar-width: none; /* 파이어폭스 */
+  -ms-overflow-style: none;
+  /* 인터넷 익스플로러 */
+  scrollbar-width: none;
+  /* 파이어폭스 */
   overflow-y: scroll;
 }
 
@@ -133,4 +155,5 @@
 .screen::-webkit-scrollbar {
   display: none;
 }
+
 /* 아이폰 테두리 영역 */
