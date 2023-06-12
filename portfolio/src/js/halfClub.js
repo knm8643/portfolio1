@@ -50,6 +50,7 @@ export default {
             }
         },
         getDisplay(){
+            // 하프클럽 리모델링으로 인한 제거
             this.$axios({
                 url: "https://apix.halfclub.com/display/templates/templateByCategoryCd?categoryCd=D22589&countryCd=001&deviceCd=001&langCd=001&mandM=halfclub&siteCd=1",
                 method: "get",
@@ -57,9 +58,6 @@ export default {
                 const cornerList = response.data.data[0].cornerList;
                 const filteredList = cornerList.filter((item) => item.dispCornerCd === "HP_FM_001");
                 this.dispDataList = cornerList.filter((item) => item.cornerTitle !== "" && item.cornerGroupList[0].cornerContentList[0].detailList[0].productSummary.basicExtNm)
-
-                console.log(this.dispDataList)
-
                 if (filteredList.length > 0) {
                     const mainBanners = []
                     for (let i = 0; i < filteredList.length; i++) {

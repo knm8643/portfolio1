@@ -10,19 +10,22 @@
     </div>
     <div class="mobile-nbody">
       <div class="mobile-nbody-first">
+        <!--
+        *하프클럽 제거*
         <div class="first-box_1">
           <img src="../assets/images/halfclub.png" @click="mainicon('halfclub')">
           <p>하프클럽</p>
         </div>
-        <div class="first-box_2">
+        -->
+        <div class="first-box_1">
           <img src="../assets/images/opgg.png" @click="mainicon('opgg')">
           <p>OP.GG</p>
         </div>
-        <div class="first-box_3">
+        <div class="first-box_2">
           <img src="../assets/images/naver.png" @click="mainicon('naver')">
           <p>NAVER</p>
         </div>
-        <div class="first-box_4">
+        <div class="first-box_3">
           <img src="../assets/images/notes.png" @click="mainicon('notes')">
           <p>메모</p>
         </div>
